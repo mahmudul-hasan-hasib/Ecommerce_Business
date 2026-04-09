@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { ProtectedRoute } from '../routes/ProtectedRoute';
 import { Layout } from './Layout';
 import { CartPage } from './pages/CartPage';
+import { CheckoutPage } from './pages/CheckoutPage';
 import { Home } from './pages/Home';
 import { LoginPage } from './pages/LoginPage';
 import { ProductDetails } from './pages/ProductDetails';
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
         Component: ProtectedRoute,
         children: [
           { path: 'cart', Component: CartPage },
+          { path: 'checkout', Component: CheckoutPage },
         ],
       },
     ],

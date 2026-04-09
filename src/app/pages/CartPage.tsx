@@ -134,7 +134,9 @@ export function CartPage() {
                 </div>
               </div>
 
-              <button className="w-full bg-orange-400 hover:bg-orange-500 text-white py-3 px-6 rounded-md font-bold transition mb-3">
+              <button
+                onClick={() => navigate('/checkout')}
+                className="w-full bg-orange-400 hover:bg-orange-500 text-white py-3 px-6 rounded-md font-bold transition mb-3">
                 Proceed to Checkout
               </button>
 
